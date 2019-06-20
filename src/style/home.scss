@@ -1,0 +1,32 @@
+.homeCotainer{
+  .topSlider{
+    position: relative;
+    line-height: 0;
+    img{
+      width: 100%;
+      object-fit: cover;
+      height: calc(100vh - 90px);
+    }
+    .captionContainer{
+      position: absolute;
+      bottom: 0;
+      background-color: rgba(158, 153, 146, 0.7);
+      padding: 35px 40px;
+      max-width: 545px;
+    }
+  }
+}
+.imgContainer{
+  display: flex;
+  max-width: 1250px;
+  justify-content: center;
+  margin: auto;
+  padding: 30px;
+  flex-wrap: wrap;
+}
+.imgCard{
+  padding: 10px;
+  img{
+    width: 100%;
+  }
+}
