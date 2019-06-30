@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-// import Grid from '@material-ui/core/Grid';
 import Gallery from "react-photo-gallery";
 import Carousel, { Modal, ModalGateway } from "react-images";
 import { photos } from "./../Data/photos";

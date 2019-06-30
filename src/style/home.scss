@@ -1,11 +1,16 @@
 .homeCotainer{
+  .tabNabfixed{
+    position: fixed;
+    top:80px;
+    z-index: 0;
+  }
   .topSlider{
     position: relative;
     line-height: 0;
     img{
       width: 100%;
       object-fit: cover;
-      height: calc(100vh - 90px);
+      height: calc(100vh - 120px);
     }
     .captionContainer{
       position: absolute;

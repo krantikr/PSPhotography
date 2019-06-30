@@ -2,8 +2,7 @@ import React from 'react';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
-// import Link from '@material-ui/core/Link';
-import Showcase from './../components/ShowCase';
+import TabBar from './../components/TabBar';
 import './../style/home.scss'
 
 class Home extends React.Component{
@@ -14,7 +13,7 @@ class Home extends React.Component{
         <Paper>
           <div  className="topSlider">
             <img
-                src="https://source.unsplash.com/user/erondu"
+                src="./banner/1.jpeg"
                 alt="background"
               />
             <div className="captionContainer">
@@ -28,7 +27,7 @@ class Home extends React.Component{
             </div>
           </div>
         </Paper>
-        <Showcase/>
+        <TabBar isNavFixed={this.props.isNavFixed}/>
       </div>
     )
   }

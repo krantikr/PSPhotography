@@ -5,7 +5,7 @@ import Toolbar from '@material-ui/core/Toolbar';
 export default function SimpleAppBar() {
   return (
     <div className="navBarCantener">
-      <AppBar position="fixed" color="#ffffff">
+      <AppBar position="fixed" color="default">
         <Toolbar>
           <div className="brandLogo">
             <img src="./images/ps_logo.jpg" alt="PS Photography" />
