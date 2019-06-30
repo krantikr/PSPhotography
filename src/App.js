@@ -9,11 +9,9 @@ class App extends React.Component {
   }
   componentDidMount(){
     let navbar = document.getElementById("tabNavBar");
-    let sticky = navbar.offsetTop - 81;
+    let sticky = navbar.offsetTop - 80;
     window.onscroll = ()=>{
       let navFixed = this.state.isNavFixed
-      console.log(window.pageYOffset)
-      console.log(sticky)
       if (window.pageYOffset >= sticky) {
         navFixed = true;
       } else {

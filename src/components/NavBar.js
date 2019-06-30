@@ -8,7 +8,8 @@ export default function SimpleAppBar() {
       <AppBar position="fixed" color="default">
         <Toolbar>
           <div className="brandLogo">
-            <img src="./images/ps_logo.jpg" alt="PS Photography" />
+            <img src="./images/baba_photography.png" alt="Baba Photography" />
+            <h1>Baba Photography</h1>
           </div>
         </Toolbar>
       </AppBar>

@@ -18,11 +18,10 @@ class Home extends React.Component{
               />
             <div className="captionContainer">
               <Typography variant="h4" color="inherit" >
-                Title of a blog post
+                Puri Sea Beach
               </Typography>
               <Typography  color="inherit" >
-                Multiple lines of text that form the lede, informing new readers quickly and
-                efficiently about what&apos;s most interesting in this post&apos;s contents.
+                Baba Photography | A great moment on Puri Beach. Puri Beach is a beach in the city of Puri in the state of Odisha, India. 
               </Typography>
             </div>
           </div>

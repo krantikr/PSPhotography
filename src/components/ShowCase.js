@@ -17,7 +17,11 @@ const ShowCase = ()=>{
   };
   return(
     <div className="imgContainer">
-      <Gallery photos={photos} onClick={openLightbox} />
+      <Gallery 
+      photos={photos} 
+      onClick={openLightbox} 
+      margin={6}
+      columns={3} />
       <ModalGateway>
         {viewerIsOpen ? (
           <Modal onClose={closeLightbox}>

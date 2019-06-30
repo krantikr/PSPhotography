@@ -1,7 +1,7 @@
 .homeCotainer{
   .tabNabfixed{
     position: fixed;
-    top:80px;
+    top:85px;
     z-index: 0;
   }
   .topSlider{
@@ -15,9 +15,19 @@
     .captionContainer{
       position: absolute;
       bottom: 0;
-      background-color: rgba(158, 153, 146, 0.7);
-      padding: 35px 40px;
+      background-color: rgba(35, 34, 34, 0.7);
+      padding: 30px 40px;
       max-width: 545px;
+      h4{
+        font-weight: 200;
+        font-family: 'Courgette', cursive;
+        color: #f50057;
+        letter-spacing: 0;
+        margin-bottom: 10px;
+      }
+      p{
+        color: #cccccc;
+      }
     }
   }
 }
