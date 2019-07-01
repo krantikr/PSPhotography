@@ -13,7 +13,7 @@ class Home extends React.Component{
         <Paper>
           <div  className="topSlider">
             <img
-                src="./banner/1.jpeg"
+                src="./banner/baba-bnner.jpeg"
                 alt="background"
               />
             <div className="captionContainer">
