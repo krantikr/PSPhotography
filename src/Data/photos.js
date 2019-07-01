@@ -1,44 +1,62 @@
 export const photos = [
   {
-    src: "/photos/1.jpg",
-    width: 4,
-    height: 3,
-    alt:""
-  },
-  {
-    src: "/photos/2.jpg",
+    src: "/photos/baba-photography-1.jpeg",
     width: 3,
     height: 4,
-    alt:""
+    alt:"baba photography 1"
   },
   {
-    src: "/photos/3.jpg",
+    src: "/photos/baba-photography-2.jpeg",
+    width: 4,
+    height: 3,
+    alt:"baba photography 2"
+  },
+  {
+    src: "/photos/baba-photography-3.jpeg",
     width: 1,
     height: 1,
-    alt:""
+    alt:"baba photography 3"
   },
   {
-    src: "/photos/4.jpg",
+    src: "/photos/baba-photography-4.jpeg",
     width: 3,
     height: 4,
-    alt:""
+    alt:"baba photography 4"
   },
   {
-    src: "/photos/5.jpg",
+    src: "/photos/baba-photography-5.jpeg",
     width: 3,
     height: 4,
-    alt:""
+    alt:"baba photography 5"
   },
   {
-    src: "/photos/6.jpg",
+    src: "/photos/baba-photography-6.jpeg",
     width: 4,
     height: 3,
-    alt:""
+    alt:"baba photography 6"
   },
   {
-    src: "/photos/7.jpg",
+    src: "/photos/baba-photography-7.jpeg",
+    width: 1,
+    height: 1,
+    alt:"baba photography 7"
+  },
+  {
+    src: "/photos/baba-photography-8.jpeg",
+    width: 4,
+    height: 3,
+    alt:"baba photography 8"
+  },
+  {
+    src: "/photos/baba-photography-9.jpeg",
     width: 3,
     height: 4,
-    alt:""
+    alt:"baba photography 9"
+  },
+  {
+    src: "/photos/baba-photography-10.jpeg",
+    width: 4,
+    height: 3,
+    alt:"baba photography 10"
   }
 ];
