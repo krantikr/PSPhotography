@@ -32,13 +32,13 @@ const Footer = ()=>{
             <Link to='/'>Home</Link>
           </Typography>
           <Typography component="div">
-            <Link to='/'>Gallery</Link>
+            <Link to='/gallery'>Gallery</Link>
           </Typography>
           <Typography component="div">
-            <Link to='/'>About</Link>
+            <Link to='/about'>About</Link>
           </Typography>
           <Typography component="div">
-            <Link to='/'>Contact Us</Link>
+            <Link to='/contact'>Contact Us</Link>
           </Typography>
         </Typography>
         <Typography component="div">
