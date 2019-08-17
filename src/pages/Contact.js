@@ -9,6 +9,7 @@ import TextField from '@material-ui/core/TextField';
 class Contact extends React.Component{
   componentDidMount(){
     console.log('====================================')
+    console.log("jjjj")
     console.log(process.env.GOOGLE_URL)
     console.log('====================================')
   }
@@ -25,7 +26,7 @@ class Contact extends React.Component{
           </Typography>
           <Typography component="div" className='formContainer' >
             <Typography component="div" className='formElements' >
-              <form className="contactUsForm" autoComplete="off" method="POST" action="https://script.google.com/macros/s/AKfycbwVfdHa3gInVVCNQjPlq-OXEafWaI1zBfWjgEVRhXZGSxHEXkc/exec">
+              <form className="contactUsForm" autoComplete="off" method="POST" action={process.env.GOOGLE_URL}>
                 <Typography component="div" className='inputContainer' >
                   <TextField
                     required
