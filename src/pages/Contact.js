@@ -19,7 +19,7 @@ class Contact extends React.Component{
             </Typography>
           </Typography>
           <Typography component="div" className='formContainer' >
-            <form noValidate autoComplete="off">
+            <form noValidate autoComplete="off" action="https://script.google.com/macros/s/AKfycbwVfdHa3gInVVCNQjPlq-OXEafWaI1zBfWjgEVRhXZGSxHEXkc/exec">
               <Typography component="div" className='inputContainer' >
                 <TextField
                   required
