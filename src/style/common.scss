@@ -24,6 +24,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    .logo{
+      margin-left: 36px
+    }
     .linkContainer{
       margin-right:30px;
       display: flex;
@@ -147,6 +150,7 @@
     .navBar{
       .logo{
         width: 70px;
+        margin-left: 10px;
       }
       .linkContainer{
         &.hide{

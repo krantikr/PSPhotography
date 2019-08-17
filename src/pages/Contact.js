@@ -19,58 +19,76 @@ class Contact extends React.Component{
             </Typography>
           </Typography>
           <Typography component="div" className='formContainer' >
-            <form noValidate autoComplete="off" action="https://script.google.com/macros/s/AKfycbwVfdHa3gInVVCNQjPlq-OXEafWaI1zBfWjgEVRhXZGSxHEXkc/exec">
-              <Typography component="div" className='inputContainer' >
+            <Typography component="div" className='formElements' >
+              <form className="contactUsForm" autoComplete="off" method="POST" action="https://script.google.com/macros/s/AKfycbwVfdHa3gInVVCNQjPlq-OXEafWaI1zBfWjgEVRhXZGSxHEXkc/exec">
+                <Typography component="div" className='inputContainer' >
+                  <TextField
+                    required
+                    className="half-width"
+                    label="First Name"
+                    type="text"
+                    name="firstName"
+                    margin="normal"
+                    variant="outlined"
+                  />
+                  <TextField
+                    required
+                    className="half-width"
+                    label="Last Name"
+                    type="text"
+                    name="lastName"
+                    margin="normal"
+                    variant="outlined"
+                  />
+                </Typography>
+                <Typography component="div" className='inputContainer' >
+                  <TextField
+                    required
+                    className="half-width"
+                    label="Email"
+                    type="email"
+                    name="email"
+                    margin="normal"
+                    variant="outlined"
+                  />
+                  <TextField
+                    required
+                    className="half-width"
+                    label="Phone No."
+                    type="number"
+                    name="phone"
+                    margin="normal"
+                    variant="outlined"
+                  />
+                </Typography>
                 <TextField
-                  required
-                  className="half-width"
-                  label="First Name"
-                  type="text"
-                  name="firstName"
+                  className="full-width"
+                  label="Message"
+                  fullWidth
                   margin="normal"
                   variant="outlined"
                 />
-                <TextField
-                  required
-                  className="half-width"
-                  label="Last Name"
-                  type="text"
-                  name="lastName"
-                  margin="normal"
-                  variant="outlined"
-                />
+                <Typography component="div" className='submitButton' >
+                  <button>Submit</button>
+                </Typography>
+              </form>
+            </Typography>
+            <Typography component="div" className='thankyouMessage' >
+              <Typography component="h4">
+                Thank you!
               </Typography>
-              <Typography component="div" className='inputContainer' >
-                <TextField
-                  required
-                  className="half-width"
-                  label="Email"
-                  type="email"
-                  name="email"
-                  margin="normal"
-                  variant="outlined"
-                />
-                <TextField
-                  required
-                  className="half-width"
-                  label="Phone No."
-                  type="number"
-                  name="phone"
-                  margin="normal"
-                  variant="outlined"
-                />
+              <Typography component="p">
+                Your message has been successfully sent. We will contact you very soon!
               </Typography>
-              <TextField
-                className="full-width"
-                label="Message"
-                fullWidth
-                margin="normal"
-                variant="outlined"
-              />
-              <Typography component="div" className='submitButton' >
-                <button>Submit</button>
+            </Typography>
+            <Typography component="div" className='sorryMessage' >
+              <Typography component="h4">
+                Oops!
               </Typography>
-            </form>
+              <Typography component="p">
+                Something went wrong. Please try again,
+              </Typography>
+            </Typography>
           </Typography>
         </Typography>
         <SocialBar/>
