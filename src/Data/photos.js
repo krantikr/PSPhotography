@@ -17,12 +17,12 @@ export const photos = [
     height: 1,
     alt:"baba photography 3"
   },
-  {
-    src: "/photos/baba-photography-4.jpeg",
-    width: 3,
-    height: 4,
-    alt:"baba photography 4"
-  },
+  // {
+  //   src: "/photos/baba-photography-4.jpeg",
+  //   width: 3,
+  //   height: 4,
+  //   alt:"baba photography 4"
+  // },
   {
     src: "/photos/baba-photography-5.jpeg",
     width: 3,

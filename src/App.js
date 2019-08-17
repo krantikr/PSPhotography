@@ -1,31 +1,20 @@
 import React from 'react';
 import NavBar from './components/NavBar'
-import Home from './pages/Home'
+import Route from './Router'
 import './style/common.scss'
 
 class App extends React.Component {
   state = {
-    isNavFixed:false
+    mobNavActive: window.screen.width>767?true:false,
   }
-  componentDidMount(){
-    let navbar = document.getElementById("tabNavBar");
-    let sticky = navbar.offsetTop - 80;
-    window.onscroll = ()=>{
-      let navFixed = this.state.isNavFixed
-      if (window.pageYOffset >= sticky) {
-        navFixed = true;
-      } else {
-        navFixed = false;
-      }
-      this.setState({isNavFixed:navFixed})
-    }
+  openMobNav = ()=>{
+    this.setState({mobNavActive: !this.state.mobNavActive})
   }
-
   render(){
     return (
       <div className="App">
-        <NavBar/>
-        <Home  isNavFixed={this.state.isNavFixed} />
+        <NavBar openMobNav={this.openMobNav} mobNavActive={this.state.mobNavActive}/>
+        <Route/>
       </div>
     );
   }
