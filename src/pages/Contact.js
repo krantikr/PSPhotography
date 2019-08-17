@@ -7,6 +7,11 @@ import { makeStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
 
 class Contact extends React.Component{
+  componentDidMount(){
+    console.log('====================================')
+    console.log(process.env.GOOGLE_URL)
+    console.log('====================================')
+  }
   render(){
     return(
       <div className="homeCotainer">

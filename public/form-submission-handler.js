@@ -71,7 +71,6 @@
               sorryMessage.style.display = "flex";
             }
           }
-          
           return;
       };
       // url encode form data for sending as post data
