@@ -9,6 +9,7 @@ class NavBar extends React.Component{
   state = {
     activeUri: 'home'
   }
+  
   componentDidMount(){
     let prevState = this.state;
     switch(window.location.pathname){
@@ -27,9 +28,7 @@ class NavBar extends React.Component{
     this.setState(prevState)
   }
 
-  isActive = (uri) => {
-    // window.location.href = uri;
-    this.props.history.push(uri);
+  componentWillReceiveProps(){
     let prevState = this.state;
     switch(window.location.pathname){
       case '/gallery':
@@ -45,6 +44,27 @@ class NavBar extends React.Component{
           prevState.activeUri = 'home';
     }
     this.setState(prevState)
+  }
+
+  isActive = (uri) => {
+    this.props.history.push(uri);
+    let prevState = this.state;
+    switch(window.location.pathname){
+      case '/gallery':
+          prevState.activeUri = 'gallery';
+        break;
+      case '/about':
+          prevState.activeUri = 'about';
+        break;
+      case '/contact':
+          prevState.activeUri = 'contact';
+        break;
+      default:
+          prevState.activeUri = 'home';
+    }
+    this.setState(prevState,()=>{
+      window.scrollTo(0, 0);
+    })
   }
   render(){
     return (

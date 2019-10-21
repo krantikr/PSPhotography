@@ -1,9 +1,10 @@
 import React, {useState} from 'react';
 import Gallery from "react-photo-gallery";
 import Carousel, { Modal, ModalGateway } from "react-images";
-import { photos } from "./../Data/photos";
+import firebase from './../firebase/firebase'
+import 'firebase/database';
 
-const ShowCase = ()=>{
+const ShowCase = (props)=>{
   const [currentImage, setCurrentImage] = useState(0);
   const [viewerIsOpen, setViewerIsOpen] = useState(false);
 
@@ -15,10 +16,11 @@ const ShowCase = ()=>{
     setCurrentImage(0);
     setViewerIsOpen(false);
   };
+  
   return(
     <div className="imgContainer">
       <Gallery 
-      photos={photos} 
+      photos={props.photos} 
       onClick={openLightbox} 
       margin={6}
       columns={3} />
@@ -27,7 +29,7 @@ const ShowCase = ()=>{
           <Modal onClose={closeLightbox}>
             <Carousel
               currentIndex={currentImage}
-              views={photos.map(x => ({
+              views={props.photos.map(x => ({
                 ...x,
                 srcset: x.srcSet,
                 caption: x.title

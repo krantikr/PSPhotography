@@ -5,6 +5,7 @@ import Typography from '@material-ui/core/Typography';
 import ShowCase from './../components/ShowCase';
 import SocialBar from './../components/SocialBar';
 import Footer from './../components/Footer';
+import { homePhoto } from "./../Data/photos";
 
 class Home extends React.Component{
   render(){
@@ -21,11 +22,11 @@ class Home extends React.Component{
             gallery
             <span/>
           </Typography>
-          <Typography component="p">
+          {/* <Typography component="p">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, fugit nam obcaecati fuga itaque deserunt officia, error reiciendis ab quod?
-          </Typography>
+          </Typography> */}
           <Typography component="div" className="galleryContaner">
-            <ShowCase/>
+            <ShowCase photos={homePhoto}/>
           </Typography>
         </Typography>
 
@@ -43,7 +44,7 @@ class Home extends React.Component{
             <Typography component="div" className="description">
               <Typography component="p">
                 I am Prashant, Patna based freelance photographer, born and brought up in Patna also known as Patliputra. I am a professional photographer with 4 years of experience. I love travelling and i always love to explore new places and meet new people. For me photography is about making beautiful memories and creating some good images..
-                <a href="/"> Read more</a>
+                <a href="/about"> Read more</a>
               </Typography>
             </Typography>
           </Typography>

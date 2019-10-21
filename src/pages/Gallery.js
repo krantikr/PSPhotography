@@ -4,6 +4,7 @@ import Typography from '@material-ui/core/Typography';
 import ShowCase from './../components/ShowCase';
 import SocialBar from './../components/SocialBar';
 import Footer from './../components/Footer';
+import { firebasePhotos } from "./../Data/photos";
 
 class Gallery extends React.Component{
   render(){
@@ -15,11 +16,11 @@ class Gallery extends React.Component{
             gallery
             <span/>
           </Typography>
-          <Typography component="p">
+          {/* <Typography component="p">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, fugit nam obcaecati fuga itaque deserunt officia, error reiciendis ab quod?
-          </Typography>
+          </Typography> */}
           <Typography component="div" className="galleryContaner">
-            <ShowCase/>
+            <ShowCase photos={firebasePhotos}/>
           </Typography>
         </Typography>
         <SocialBar/>

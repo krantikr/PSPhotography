@@ -1,12 +1,19 @@
 .App{
-  background-image: url(/banner/baba-bnner.jpeg);
   background-size: cover;
   height: 100vh;
   top: 0;
-  position: fixed;
-  overflow: scroll;
   width: 100%;
   z-index: -1;
+  transition: all 0.5ms ease-in-out;
+  &.bg-1{
+    background-image: url(/photos/baba-photography-8.jpeg);
+  }
+  &.bg-2{
+    background-image: url(/photos/baba-photography-7.jpeg);
+  }
+  &.bg-3{
+    background-image: url(/photos/baba-photography-3.jpeg);
+  }
   .navTransparent{
     header{
       background-color: transparent;
@@ -145,6 +152,15 @@
 .mt-5{
   margin-top: 5px;
 }
+.react-photo-gallery--gallery{
+  img{
+    width: 270px;
+    height: 270px;
+    object-fit: cover;
+    margin: 0px !important;
+    border: 10px solid #ffffff;
+  }
+}
 @media only screen and (max-width:768px){
   .App {
     .navBar{
@@ -224,6 +240,11 @@
       .footerInnerContainer{
         flex-direction: column;
       }
+    }
+  }
+  .react-photo-gallery--gallery{
+    img{
+      width: 100%;
     }
   }
 }
