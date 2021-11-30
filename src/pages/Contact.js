@@ -6,16 +6,16 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
 
-class Contact extends React.Component{
-  render(){
-    return(
+class Contact extends React.Component {
+  render() {
+    return (
       <div className="homeCotainer">
         <CssBaseline />
         <Typography component="div" className='contactContainer'>
           <Typography component="div">
             <Typography component="h3">
               Contact Us
-              <span/>
+              <span />
             </Typography>
           </Typography>
           <Typography component="div" className='formContainer' >
@@ -91,8 +91,8 @@ class Contact extends React.Component{
             </Typography>
           </Typography>
         </Typography>
-        <SocialBar/>
-        <Footer/>
+        <SocialBar />
+        <Footer />
       </div>
     )
   }
